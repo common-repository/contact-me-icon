@@ -1,0 +1,43 @@
+.float{
+    position:fixed;
+    width:60px;
+    height:60px;
+    bottom:45px;
+    right:45px;
+    background-color:#25d366;
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+    font-size:30px;
+    box-shadow: 2px 2px 3px #333;
+    z-index:1000;
+    animation: bounce 1s infinite alternate;
+    -webkit-animation: bounce 1s infinite alternate;
+}
+
+@keyframes bounce {
+    from {
+        transform: translate(0px);
+    }
+    to {
+        transform: translate(-5px);
+    }
+}
+
+@-webkit-keyframes bounce {
+    from {
+        transform: translateY(0px);
+    }
+    to {
+        transform: translateY(-5px);
+    }
+    }
+
+.float:hover {
+    transform: scale(1.1);
+    color: #fff;
+}
+
+.my-float{
+    margin-top:16px;
+}
